@@ -1,7 +1,9 @@
-import "./App.css";
+import { cardData } from "./components/deckOfCards.js";
 
-function App() {
+App = () => {
+  console.log(cardData);
+
   return <div className="App"></div>;
-}
+};
 
 export default App;
