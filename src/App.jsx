@@ -1,8 +1,6 @@
 import { cardData } from "./components/deckOfCards.js";
 
-App = () => {
-  console.log(cardData);
-
+const App = () => {
   return <div className="App"></div>;
 };
 
