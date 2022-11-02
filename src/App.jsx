@@ -1,8 +1,14 @@
-import react, { useState, useEffect } from "react";
-// import { cardData } from "./components/DeckOfCards.js";
+import React, { useState, useEffect } from "react";
+import DeckController from "./components/actions/DeckController";
 
 const App = () => {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <div>
+        <button onClick={DeckController}>test</button>
+      </div>
+    </div>
+  );
 };
 
 export default App;

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { cardData } from "../items/DeckOfCards";
 
 const DeckController = () => {
@@ -6,19 +5,18 @@ const DeckController = () => {
   //const [cards, setCards] = useState(0);
 
   const shuffle = () => {
-    for (let i = 0; i < deck.length; i++) {
-      const randomIndex = Math.floor(math.random() * deck.length);
-      const card = randomIndex;
-      const temp = card;
-      randomIndex = temp;
+    for (let i = deck.length - 1; i > 0; i--) {
+      const randomIndex = Math.floor(Math.random() * (i + 1));
+      const temp = deck[i];
+      deck[i] = deck[randomIndex];
+      deck[randomIndex] = temp;
     }
   };
 
   const getCards = () => {
-    //function to get cards to render
+    return shuffle();
   };
-
-  return <div>DeckShuffle</div>;
+  return console.log(getCards());
 };
 
 export default DeckController;
