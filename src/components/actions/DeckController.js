@@ -1,8 +1,8 @@
-import { cardData } from "../items/DeckOfCards";
+import cardData from "../items/DeckOfCards";
 
 const DeckController = () => {
-  const deck = [...cardData, ...cardData, ...cardData, ...cardData];
   //const [cards, setCards] = useState(0);
+  const deck = [...cardData, ...cardData, ...cardData, ...cardData];
 
   const shuffle = () => {
     for (let i = deck.length - 1; i > 0; i--) {
@@ -13,10 +13,10 @@ const DeckController = () => {
     }
   };
 
-  const getCards = () => {
-    return shuffle();
+  const getCards = (i) => {
+    return deck(shuffle());
   };
-  return console.log(getCards());
+  console.log(getCards());
 };
 
 export default DeckController;
