@@ -33,20 +33,11 @@ Creating a simple blackjack game in ReactJS with:
 
 ## Todo list
 
-1. Shuffle cards og console.log første kortet i bunken og se at det endres
-2. Plukk et kort og se at du får neste kort i bunken, med console.log
-3. Lag en knapp som lar deg trekke kort
-4. Lag en visning av kort som er trukket
-5. Sjekk verdien på kortene ikke går over 21
-   5.1 Hvis sum er over 21 og bunken trukket kort inneholder Ess, gi ess verdi 1
-6. Lag en knapp som sier stopp
-7. Dealer ting
-   7.1 While løkke, så lenge sum er < 16 og < 21 plukk kort
-   7.2 Når dealer har fått sine kort, sammenlign
-8. Avgjør om spiller vant
-9. Ny runde med det samme.
-10. High score med antall runder ?
-    BONUS
-11. Split på 2 like kort, og ha 2 stacks man spiller på
+1. flate ut kort sturkturen i json
+2. Lag en knapp som gir deg kort i bunken i consollet
+3. Lag en visning av kort spiller har på hånden
+4. sjekk etter et kort er trukket om sum er over 21
+5. start ny runde på bust
+   [datagrunnlaget] [kortstokken] [grensenittet med event]
 
 ### Author: André Lindgård
